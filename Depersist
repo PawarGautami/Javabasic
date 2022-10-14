@@ -1,0 +1,17 @@
+package SerializationDemo;
+
+//ha program Student111 madhe je aahe te data Read krun det
+
+import java.io.*;
+
+public class Depersist {
+
+	public static void main(String[] args)throws Exception {
+		// TODO Auto-generated method stub
+ObjectInputStream in=new ObjectInputStream(new FileInputStream("f.txt"));
+xyzz s1=(xyzz)in.readObject();
+System.out.println(s1.id+" "+s1.name);
+in.close();
+	}
+
+}
